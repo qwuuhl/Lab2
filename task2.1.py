@@ -16,12 +16,13 @@ c = int(input("Введіть значення c: "))
 s = int(input("Введіть розмір суми s: "))
 
 tax = 0
-if s > a and s < b:
+if s > a and s <= b:
     tax = 10
-elif s > b and s < c:
+elif s > b and s <= c:
     tax = 25
 elif s > c:
     tax = 50
+s_tax = s * tax / 100
 
 print(f"Податок з суми {s} становить: {tax}")
 
